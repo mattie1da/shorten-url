@@ -3,6 +3,7 @@
     <div class="container">
       <Title/>
       <ShortenForm/>
+      <Signature/>
     </div>
   </div>
 </template>
@@ -10,13 +11,15 @@
 <script>
 import Title from './components/Title';
 import ShortenForm from './components/ShortenForm';
+import Signature from './components/Signature'
 
 export default {
     name: 'App',
 
     components: {
         Title,
-        ShortenForm
+        ShortenForm,
+        Signature
     },
 }
 </script>
@@ -59,11 +62,12 @@ export default {
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    padding: 0 1rem;
+    padding: 1rem;
+    position: relative;
 
     @media (min-width: 750px) {
       align-items: center;
-      padding: 1rem;
+      padding: 0 1rem;
     }
   }
 
@@ -87,5 +91,4 @@ export default {
   .link {
     text-decoration: underline;
   }
-
 </style>
