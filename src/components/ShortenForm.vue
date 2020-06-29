@@ -1,7 +1,7 @@
 <template>
     <div>
         <form class="form">
-            <label class="form__label" for="url">enter your url ⬇️</label>
+            <label class="form__label" for="url">paste your url ⬇️</label>
             <div class="form__item">
                 <input class="form__input" placeholder="feed me" v-model="url" id="url" name="url" type="url">
                 <button @click.prevent="shorten" class="form__button" type="submit">send</button>
@@ -161,7 +161,7 @@ export default {
     .results {
         margin-top: 2rem;
         max-height: 350px;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 
     .result {
